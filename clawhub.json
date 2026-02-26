@@ -1,0 +1,45 @@
+{
+  "name": "weibo-poster",
+  "version": "1.0.0",
+  "description": "使用无头浏览器模拟真人操作发布微博。支持文字、图片、视频发布，自动处理登录、验证码、反检测。",
+  "author": "Scarlett",
+  "license": "MIT",
+  "homepage": "https://github.com/your-username/weibo-poster",
+  "repository": "https://github.com/your-username/weibo-poster",
+  "tags": ["weibo", "social-media", "automation", "playwright", "chinese"],
+  "category": "social-media",
+  "requirements": {
+    "python": ">=3.8",
+    "system": ["chromium", "xvfb"]
+  },
+  "entry_point": "scripts/weibo_post.py",
+  "install_script": "scripts/install.sh",
+  "config_template": "assets/config.example.json",
+  "examples": [
+    {
+      "name": "发布文字微博",
+      "command": "python scripts/weibo_post.py --config assets/config.json --content \"你好微博\""
+    },
+    {
+      "name": "发布带图微博",
+      "command": "python scripts/weibo_post.py --config assets/config.json --content \"美食分享\" --images photo1.jpg photo2.jpg"
+    },
+    {
+      "name": "发布带话题微博",
+      "command": "python scripts/weibo_post.py --config assets/config.json --content \"日常\" --topics \"生活\" \"日常\""
+    }
+  ],
+  "screenshots": [],
+  "changelog": {
+    "1.0.0": {
+      "date": "2026-02-26",
+      "changes": [
+        "初始版本发布",
+        "支持文字、图片、视频发布",
+        "真人行为模拟（随机延迟、鼠标轨迹）",
+        "反检测措施（User-Agent 轮换、Cookie 持久化）",
+        "OpenClaw 集成支持"
+      ]
+    }
+  }
+}

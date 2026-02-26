@@ -1,0 +1,18 @@
+{
+  "account": {
+    "username": "your_weibo_username",
+    "password": "your_weibo_password",
+    "cookie_file": "cookies.json"
+  },
+  "browser": {
+    "headless": true,
+    "user_agent": "random",
+    "proxy": null
+  },
+  "behavior": {
+    "min_delay_ms": 1000,
+    "max_delay_ms": 5000,
+    "scroll_before_post": true,
+    "random_typing_speed": true
+  }
+}
