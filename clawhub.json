@@ -28,7 +28,7 @@
     },
     {
       "name": "发布带话题微博",
-      "command": "python scripts/weibo_post.py --config assets/config.json --content \"日常\" --topics \"生活\" "日常""
+      "command": "python scripts/weibo_post.py --config assets/config.json --content \"日常\" --topics \"生活\" \"日常\""
     }
   ],
   "screenshots": [],
